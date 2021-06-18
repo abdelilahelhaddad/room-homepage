@@ -1,1 +1,122 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@500;600;700&display=swap");
+/* Font Weight */
+/* Color */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Spartan', sans-serif;
+  font-size: 12px;
+}
+
+#main {
+  height: 100vh;
+}
+
+#main #hero {
+  height: 66vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#main #hero .hero_left {
+  width: 60vw;
+  background: url("./images/desktop-image-hero-1.jpg") no-repeat center center/cover;
+  padding: 3% 0 0 3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+#main #hero .hero_left #logo {
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+#main #hero .hero_left #navbar {
+  margin-left: 5%;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+#main #hero .hero_left #navbar .nav_list {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#main #hero .hero_left #navbar .nav_list li {
+  margin-right: 1.5rem;
+  position: relative;
+}
+
+#main #hero .hero_left #navbar .nav_list li a {
+  text-decoration: none;
+  text-transform: lowercase;
+  color: white;
+}
+
+#main #hero .hero_left #navbar .nav_list li:hover a::after {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 3px;
+  left: 25%;
+  margin-top: 0.3rem;
+  background: white;
+}
+
+#main #hero .hero_left #silder_buttons {
+  position: absolute;
+  right: -110px;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: black;
+}
+
+#main #hero .hero_left #silder_buttons #prev,
+#main #hero .hero_left #silder_buttons #next {
+  width: 55px;
+  height: 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#main #hero .hero_left #silder_buttons #prev:hover,
+#main #hero .hero_left #silder_buttons #next:hover {
+  background: #454545;
+}
+
+#main #hero .hero_right {
+  width: 40vw;
+  background: orangered;
+}
+
+#main #hero .hero_right .product_Slider {
+  margin: 15%;
+}
+
+#main #about {
+  height: 34vh;
+  background: green;
+}
+/*# sourceMappingURL=style.css.map */

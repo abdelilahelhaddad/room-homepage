@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@500;600;700&display=swap');
+
+/* Font Weight */
+$font-weight-400:400;
+$font-weight-700:700;
+
+/* Color */
+$Dark-Gray: hsl(0, 0%, 63%);
+$Black: hsl(0, 0%, 0%);
+$White: hsl(0, 0%, 100%);
+$Very-Dark-Gray: hsl(0, 0%, 27%);
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Spartan', sans-serif;
+  font-size: 12px;
+}
+
+#main {
+  height: 100vh;
+
+  #hero {
+    height: 66vh;
+    display: flex;
+
+    .hero_left {
+      width: 60vw;
+      background: url("./images/desktop-image-hero-1.jpg") no-repeat center center/cover;
+      padding: 3% 0 0 3%;
+      display: flex;
+      position: relative;
+
+      #logo {
+        margin-right: 1rem;
+        cursor: pointer;
+      }
+
+      #navbar {
+        margin-left: 5%;
+        justify-self: center;
+
+        .nav_list {
+          list-style: none;
+          display: flex;
+
+          li {
+            margin-right: 1.5rem;
+            position: relative;
+
+            a {
+              text-decoration: none;
+              text-transform: lowercase;
+              color: $White;
+            }
+
+            &:hover {
+
+              a::after {
+                display: block;
+                content: "";
+                position: absolute;
+                width: 50%;
+                height: 3px;
+                left: 25%;
+                margin-top: 0.3rem;
+                background: $White;
+              }
+            }
+          }
+        }
+      }
+
+      #silder_buttons {
+        position: absolute;
+        right: -110px;
+        bottom: 0;
+        display: flex;
+        background: $Black;
+
+        #prev,
+        #next {
+          width: 55px;
+          height: 55px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          &:hover {
+            background: $Very-Dark-Gray;
+          }
+        }
+
+      }
+    }
+
+    .hero_right {
+      width: 40vw;
+      background: orangered;
+
+      .product_Slider {
+        margin: 15%;
+      }
+    }
+  }
+
+  #about {
+    height: 34vh;
+    background: green;
+  }
+}
