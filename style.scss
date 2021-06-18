@@ -79,18 +79,19 @@ body {
 
       #silder_buttons {
         position: absolute;
-        right: -110px;
+        right: -10vw;
         bottom: 0;
         display: flex;
         background: $Black;
 
         #prev,
         #next {
-          width: 55px;
-          height: 55px;
+          width: 5vw;
+          height: 5vw;
           display: flex;
           justify-content: center;
           align-items: center;
+          cursor: pointer;
 
           &:hover {
             background: $Very-Dark-Gray;
@@ -120,6 +121,7 @@ body {
 
         .shop_now {
           display: flex;
+          cursor: pointer;
 
           p {
             font-weight: $font-weight-400;
@@ -128,7 +130,7 @@ body {
           }
 
           svg {
-            margin-left: 2rem;
+            margin-left: 1.7rem;
           }
 
           &:hover {
@@ -149,6 +151,36 @@ body {
 
   #about {
     height: 34vh;
-    background: green;
+    display: flex;
+
+    .dark,
+    .light {
+      width: 30vw;
+    }
+
+    .dark {
+      background: url("./images/image-about-dark.jpg") no-repeat center center/cover;
+    }
+
+    .light {
+      background: url("./images/image-about-light.jpg") no-repeat center center/cover;
+    }
+
+    .content {
+      width: 40vw;
+      align-self: center;
+      padding: 0 2.5rem;
+
+      h4 {
+        text-transform: uppercase;
+        letter-spacing: 3px;
+      }
+
+      p {
+        margin-top: 0.6rem;
+        line-height: 1.2rem;
+        color: $Dark-Gray;
+      }
+    }
   }
 }

@@ -78,7 +78,7 @@ body {
 
 #main #hero .hero_left #silder_buttons {
   position: absolute;
-  right: -110px;
+  right: -10vw;
   bottom: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -88,8 +88,8 @@ body {
 
 #main #hero .hero_left #silder_buttons #prev,
 #main #hero .hero_left #silder_buttons #next {
-  width: 55px;
-  height: 55px;
+  width: 5vw;
+  height: 5vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -99,6 +99,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
 }
 
 #main #hero .hero_left #silder_buttons #prev:hover,
@@ -130,6 +131,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  cursor: pointer;
 }
 
 #main #hero .hero_right .product_Slider .shop_now p {
@@ -139,7 +141,7 @@ body {
 }
 
 #main #hero .hero_right .product_Slider .shop_now svg {
-  margin-left: 2rem;
+  margin-left: 1.7rem;
 }
 
 #main #hero .hero_right .product_Slider .shop_now:hover p {
@@ -152,6 +154,40 @@ body {
 
 #main #about {
   height: 34vh;
-  background: green;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#main #about .dark,
+#main #about .light {
+  width: 30vw;
+}
+
+#main #about .dark {
+  background: url("./images/image-about-dark.jpg") no-repeat center center/cover;
+}
+
+#main #about .light {
+  background: url("./images/image-about-light.jpg") no-repeat center center/cover;
+}
+
+#main #about .content {
+  width: 40vw;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 0 2.5rem;
+}
+
+#main #about .content h4 {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+#main #about .content p {
+  margin-top: 0.6rem;
+  line-height: 1.2rem;
+  color: #a1a1a1;
 }
 /*# sourceMappingURL=style.css.map */
