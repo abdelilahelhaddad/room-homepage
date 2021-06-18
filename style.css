@@ -37,7 +37,7 @@ body {
 }
 
 #main #hero .hero_left #logo {
-  margin-right: 1rem;
+  margin: 0 0.7rem;
   cursor: pointer;
 }
 
@@ -108,11 +108,46 @@ body {
 
 #main #hero .hero_right {
   width: 40vw;
-  background: orangered;
 }
 
 #main #hero .hero_right .product_Slider {
   margin: 15%;
+}
+
+#main #hero .hero_right .product_Slider h1 {
+  font-weight: 700;
+  font-size: 35px;
+}
+
+#main #hero .hero_right .product_Slider > p {
+  margin: 1.5rem 0;
+  line-height: 1.2rem;
+  font-size: 12px;
+  color: #a1a1a1;
+}
+
+#main #hero .hero_right .product_Slider .shop_now {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#main #hero .hero_right .product_Slider .shop_now p {
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+}
+
+#main #hero .hero_right .product_Slider .shop_now svg {
+  margin-left: 2rem;
+}
+
+#main #hero .hero_right .product_Slider .shop_now:hover p {
+  color: #a1a1a1;
+}
+
+#main #hero .hero_right .product_Slider .shop_now:hover svg path {
+  fill: #a1a1a1;
 }
 
 #main #about {
