@@ -41,9 +41,6 @@ const nextImage = () => {
   if (bgIndex < bgSlides.length - 1) {
     bgIndex++;
     slideImage.style.background = `url(${bgSlides[bgIndex]}) no-repeat center center/cover`;
-    console.log(bgIndex);
-    console.log(bgSlides.length);
-    console.log(bgSlides[bgIndex]);
   } else {
     bgIndex = 0;
     slideImage.style.background = `url(${bgSlides[bgIndex]}) no-repeat center center/cover`;
@@ -54,9 +51,6 @@ const prevImage = () => {
   if (bgIndex < bgSlides.length && bgIndex > 0) {
     bgIndex--;
     slideImage.style.background = `url(${bgSlides[bgIndex]}) no-repeat center center/cover`;
-    console.log(bgIndex);
-    console.log(bgSlides.length);
-    console.log(bgSlides[bgIndex]);
   } else {
     bgIndex = 2;
     slideImage.style.background = `url(${bgSlides[bgIndex]}) no-repeat center center/cover`;
