@@ -27,8 +27,8 @@ body {
 }
 
 #main #hero .hero_left {
-  width: 60vw;
   background: url("./images/desktop-image-hero-1.jpg") no-repeat center center/cover;
+  width: 60vw;
   padding: 3% 0 0 3%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -112,6 +112,7 @@ body {
 }
 
 #main #hero .hero_right .product_Slider {
+  display: none;
   margin: 15%;
 }
 
@@ -150,6 +151,10 @@ body {
 
 #main #hero .hero_right .product_Slider .shop_now:hover svg path {
   fill: #a1a1a1;
+}
+
+#main #hero .hero_right .product_Slider.current {
+  display: block;
 }
 
 #main #about {
