@@ -67,3 +67,7 @@ prev.addEventListener('click', () => {
   prevSlide();
   prevImage();
 });
+
+window.addEventListener("resize", () => {
+  console.log(window.screen.width)
+})

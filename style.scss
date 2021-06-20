@@ -188,4 +188,176 @@ body {
       }
     }
   }
+
+  @media screen and (max-width:768px) {
+
+    #hero {
+      height: auto;
+      flex-direction: column;
+
+      .hero_left {
+        background: url("./images/mobile-image-hero-1.jpg") no-repeat center center/cover;
+        width: 100vw;
+        height: 50vh;
+        padding: 3% 0 0 3%;
+        display: flex;
+        position: relative;
+
+        #logo {
+          margin: 0 0.7rem;
+          cursor: pointer;
+        }
+
+        #navbar {
+          margin-left: 5%;
+          justify-self: center;
+          display: none;
+
+          .nav_list {
+            list-style: none;
+            display: flex;
+
+            li {
+              margin-right: 1.5rem;
+              position: relative;
+
+              a {
+                text-decoration: none;
+                text-transform: lowercase;
+                color: $White;
+              }
+
+              &:hover {
+
+                a::after {
+                  display: block;
+                  content: "";
+                  position: absolute;
+                  width: 50%;
+                  height: 3px;
+                  left: 25%;
+                  margin-top: 0.3rem;
+                  background: $White;
+                }
+              }
+            }
+          }
+        }
+
+        #silder_buttons {
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          display: flex;
+          background: $Black;
+
+          #prev,
+          #next {
+            width: 12vw;
+            height: 8vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+
+            &:hover {
+              background: $Very-Dark-Gray;
+            }
+          }
+
+        }
+      }
+
+      .hero_right {
+        width: 100vw;
+        height: 50vh;
+
+        .product_Slider {
+          display: none;
+          margin: 10%;
+
+          h1 {
+            font-weight: $font-weight-700;
+            font-size: 20px;
+          }
+
+          >p {
+            margin: 1.5rem 0;
+            line-height: 1.2rem;
+            font-size: 12px;
+            color: $Dark-Gray;
+          }
+
+          .shop_now {
+            display: flex;
+            cursor: pointer;
+
+            p {
+              font-weight: $font-weight-400;
+              text-transform: uppercase;
+              letter-spacing: 8px;
+            }
+
+            svg {
+              margin-left: 1.7rem;
+            }
+
+            &:hover {
+              p {
+                color: $Dark-Gray;
+              }
+
+              svg {
+                path {
+                  fill: $Dark-Gray;
+                }
+              }
+            }
+          }
+        }
+
+        .product_Slider.current {
+          display: block;
+        }
+      }
+    }
+
+    #about {
+      height: auto;
+      flex-direction: column;
+
+      .dark,
+      .light {
+        width: 100vw;
+        height: 266px;
+        margin-top: 4rem;
+      }
+
+      .dark {
+        background: url("./images/image-about-dark.jpg") no-repeat center center/cover;
+      }
+
+      .light {
+        background: url("./images/image-about-light.jpg") no-repeat center center/cover;
+      }
+
+      .content {
+        width: 100vw;
+        align-self: center;
+        padding: 0 2.5rem;
+        margin-top: 4rem;
+
+        h4 {
+          text-transform: uppercase;
+          letter-spacing: 3px;
+        }
+
+        p {
+          margin-top: 0.6rem;
+          line-height: 1.2rem;
+          color: $Dark-Gray;
+        }
+      }
+    }
+  }
 }

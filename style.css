@@ -195,4 +195,164 @@ body {
   line-height: 1.2rem;
   color: #a1a1a1;
 }
+
+@media screen and (max-width: 768px) {
+  #main #hero {
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #main #hero .hero_left {
+    background: url("./images/mobile-image-hero-1.jpg") no-repeat center center/cover;
+    width: 100vw;
+    height: 50vh;
+    padding: 3% 0 0 3%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+  }
+  #main #hero .hero_left #logo {
+    margin: 0 0.7rem;
+    cursor: pointer;
+  }
+  #main #hero .hero_left #navbar {
+    margin-left: 5%;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    display: none;
+  }
+  #main #hero .hero_left #navbar .nav_list {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #main #hero .hero_left #navbar .nav_list li {
+    margin-right: 1.5rem;
+    position: relative;
+  }
+  #main #hero .hero_left #navbar .nav_list li a {
+    text-decoration: none;
+    text-transform: lowercase;
+    color: white;
+  }
+  #main #hero .hero_left #navbar .nav_list li:hover a::after {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 3px;
+    left: 25%;
+    margin-top: 0.3rem;
+    background: white;
+  }
+  #main #hero .hero_left #silder_buttons {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: black;
+  }
+  #main #hero .hero_left #silder_buttons #prev,
+  #main #hero .hero_left #silder_buttons #next {
+    width: 12vw;
+    height: 8vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    cursor: pointer;
+  }
+  #main #hero .hero_left #silder_buttons #prev:hover,
+  #main #hero .hero_left #silder_buttons #next:hover {
+    background: #454545;
+  }
+  #main #hero .hero_right {
+    width: 100vw;
+    height: 50vh;
+  }
+  #main #hero .hero_right .product_Slider {
+    display: none;
+    margin: 10%;
+  }
+  #main #hero .hero_right .product_Slider h1 {
+    font-weight: 700;
+    font-size: 20px;
+  }
+  #main #hero .hero_right .product_Slider > p {
+    margin: 1.5rem 0;
+    line-height: 1.2rem;
+    font-size: 12px;
+    color: #a1a1a1;
+  }
+  #main #hero .hero_right .product_Slider .shop_now {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    cursor: pointer;
+  }
+  #main #hero .hero_right .product_Slider .shop_now p {
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+  }
+  #main #hero .hero_right .product_Slider .shop_now svg {
+    margin-left: 1.7rem;
+  }
+  #main #hero .hero_right .product_Slider .shop_now:hover p {
+    color: #a1a1a1;
+  }
+  #main #hero .hero_right .product_Slider .shop_now:hover svg path {
+    fill: #a1a1a1;
+  }
+  #main #hero .hero_right .product_Slider.current {
+    display: block;
+  }
+  #main #about {
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #main #about .dark,
+  #main #about .light {
+    width: 100vw;
+    height: 266px;
+    margin-top: 4rem;
+  }
+  #main #about .dark {
+    background: url("./images/image-about-dark.jpg") no-repeat center center/cover;
+  }
+  #main #about .light {
+    background: url("./images/image-about-light.jpg") no-repeat center center/cover;
+  }
+  #main #about .content {
+    width: 100vw;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    padding: 0 2.5rem;
+    margin-top: 4rem;
+  }
+  #main #about .content h4 {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+  #main #about .content p {
+    margin-top: 0.6rem;
+    line-height: 1.2rem;
+    color: #a1a1a1;
+  }
+}
 /*# sourceMappingURL=style.css.map */
