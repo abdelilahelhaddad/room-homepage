@@ -205,10 +205,10 @@ body {
             flex-direction: column;
   }
   #main #hero .hero_left {
-    background: url("./images/mobile-image-hero-1.jpg") no-repeat center center/cover;
+    background: url("./images/desktop-image-hero-1.jpg") no-repeat center center/cover;
     width: 100vw;
     height: 50vh;
-    padding: 3% 0 0 3%;
+    padding: 7% 0 0 3%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -218,11 +218,21 @@ body {
     margin: 0 0.7rem;
     cursor: pointer;
   }
+  #main #hero .hero_left #logo::before {
+    content: "";
+    background: url("./images/icon-hamburger.svg");
+    display: inline-block;
+    width: 20px;
+    height: 14px;
+    margin-right: 50%;
+  }
   #main #hero .hero_left #navbar {
     margin-left: 5%;
     -ms-grid-column-align: center;
         justify-self: center;
     display: none;
+    position: absolute;
+    left: 25%;
   }
   #main #hero .hero_left #navbar .nav_list {
     list-style: none;
