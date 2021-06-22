@@ -73,9 +73,9 @@ window.addEventListener("resize", () => {
 })
 
 const burger = document.querySelector('#burger-close');
+const navbar = document.querySelector('#navbar');
 
 burger.addEventListener("click", () => {
-  burger.style.background = "url('./images/icon-close.svg')";
-  burger.style.width = "16px";
-  burger.style.height = "16px";
+  burger.classList.toggle("toggle");
+  navbar.classList.toggle("toggle");
 });

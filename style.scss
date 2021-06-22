@@ -217,6 +217,13 @@ body {
           margin-left: 1rem;
         }
 
+        #burger-close.toggle {
+          background: url("./images/icon-close.svg");
+          width: 16px;
+          height: 16px;
+          z-index: 999;
+        }
+
         #logo {
           margin: 0;
           cursor: pointer;
@@ -227,15 +234,21 @@ body {
         }
 
         #navbar {
-          margin-left: 5%;
+          margin-left: 0;
           justify-self: center;
           display: none;
           position: absolute;
-          left: 25%;
+          left: 0;
+          background: #FFF;
+          width: 100vw;
+          height: 13vh;
+          margin-top: -7%;
 
           .nav_list {
             list-style: none;
             display: flex;
+            margin-top: 7%;
+            margin-left: 25%;
 
             li {
               margin-right: 1.5rem;
@@ -244,7 +257,8 @@ body {
               a {
                 text-decoration: none;
                 text-transform: lowercase;
-                color: $White;
+                color: $Black;
+                font-weight: $font-weight-700;
               }
 
               &:hover {
@@ -262,6 +276,10 @@ body {
               }
             }
           }
+        }
+
+        #navbar.toggle {
+          display: block;
         }
 
         #silder_buttons {

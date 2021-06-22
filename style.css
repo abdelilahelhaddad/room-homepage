@@ -227,6 +227,12 @@ body {
     left: 0;
     margin-left: 1rem;
   }
+  #main #hero .hero_left #burger-close.toggle {
+    background: url("./images/icon-close.svg");
+    width: 16px;
+    height: 16px;
+    z-index: 999;
+  }
   #main #hero .hero_left #logo {
     margin: 0;
     cursor: pointer;
@@ -242,18 +248,24 @@ body {
             align-items: flex-start;
   }
   #main #hero .hero_left #navbar {
-    margin-left: 5%;
+    margin-left: 0;
     -ms-grid-column-align: center;
         justify-self: center;
     display: none;
     position: absolute;
-    left: 25%;
+    left: 0;
+    background: #FFF;
+    width: 100vw;
+    height: 13vh;
+    margin-top: -7%;
   }
   #main #hero .hero_left #navbar .nav_list {
     list-style: none;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin-top: 7%;
+    margin-left: 25%;
   }
   #main #hero .hero_left #navbar .nav_list li {
     margin-right: 1.5rem;
@@ -262,7 +274,8 @@ body {
   #main #hero .hero_left #navbar .nav_list li a {
     text-decoration: none;
     text-transform: lowercase;
-    color: white;
+    color: black;
+    font-weight: 700;
   }
   #main #hero .hero_left #navbar .nav_list li:hover a::after {
     display: block;
@@ -273,6 +286,9 @@ body {
     left: 25%;
     margin-top: 0.3rem;
     background: white;
+  }
+  #main #hero .hero_left #navbar.toggle {
+    display: block;
   }
   #main #hero .hero_left #silder_buttons {
     position: absolute;
