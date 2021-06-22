@@ -36,6 +36,10 @@ body {
   position: relative;
 }
 
+#main #hero .hero_left #burger-close {
+  display: none;
+}
+
 #main #hero .hero_left #logo {
   margin: 0 0.7rem;
   cursor: pointer;
@@ -214,17 +218,28 @@ body {
     display: flex;
     position: relative;
   }
-  #main #hero .hero_left #logo {
-    margin: 0 0.7rem;
-    cursor: pointer;
-  }
-  #main #hero .hero_left #logo::before {
-    content: "";
-    background: url("./images/icon-hamburger.svg");
+  #main #hero .hero_left #burger-close {
     display: inline-block;
+    position: absolute;
+    background: url("./images/icon-hamburger.svg");
     width: 20px;
     height: 14px;
-    margin-right: 50%;
+    left: 0;
+    margin-left: 1rem;
+  }
+  #main #hero .hero_left #logo {
+    margin: 0;
+    cursor: pointer;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
   #main #hero .hero_left #navbar {
     margin-left: 5%;

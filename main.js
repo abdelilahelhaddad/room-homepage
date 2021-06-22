@@ -71,3 +71,11 @@ prev.addEventListener('click', () => {
 window.addEventListener("resize", () => {
   console.log(window.screen.width)
 })
+
+const burger = document.querySelector('#burger-close');
+
+burger.addEventListener("click", () => {
+  burger.style.background = "url('./images/icon-close.svg')";
+  burger.style.width = "16px";
+  burger.style.height = "16px";
+});

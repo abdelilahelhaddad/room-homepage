@@ -37,6 +37,10 @@ body {
       display: flex;
       position: relative;
 
+      #burger-close {
+        display: none;
+      }
+
       #logo {
         margin: 0 0.7rem;
         cursor: pointer;
@@ -203,18 +207,23 @@ body {
         display: flex;
         position: relative;
 
-        #logo {
-          margin: 0 0.7rem;
-          cursor: pointer;
+        #burger-close {
+          display: inline-block;
+          position: absolute;
+          background: url("./images/icon-hamburger.svg");
+          width: 20px;
+          height: 14px;
+          left: 0;
+          margin-left: 1rem;
+        }
 
-          &::before {
-            content: "";
-            background: url("./images/icon-hamburger.svg");
-            display: inline-block;
-            width: 20px;
-            height: 14px;
-            margin-right: 50%;
-          }
+        #logo {
+          margin: 0;
+          cursor: pointer;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: flex-start;
         }
 
         #navbar {
